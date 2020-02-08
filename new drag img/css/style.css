@@ -1,0 +1,63 @@
+.dragarea {
+  padding: 60px;
+  -webkit-box-shadow: inset 0 0 15px 5px grey;
+          box-shadow: inset 0 0 15px 5px grey;
+  border-radius: 10px;
+  font-size: 2em;
+  text-align: center;
+}
+
+.dragarea .drag-content {
+  border: 1px dashed brown;
+  padding: 60px;
+  border-radius: 10px;
+}
+
+.dragarea .drag-content p {
+  -webkit-transition: .3s;
+  transition: .3s;
+  pointer-events: none;
+}
+
+.dragarea .drag-content i {
+  pointer-events: none;
+  -webkit-animation: icon-ani 1s infinite linear;
+          animation: icon-ani 1s infinite linear;
+  display: none;
+}
+
+.dragarea .drag-content.active i {
+  display: block;
+}
+
+.dragarea .drag-content.active p {
+  -webkit-transform: translateY(-40px);
+          transform: translateY(-40px);
+}
+
+@-webkit-keyframes icon-ani {
+  from {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  to {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+}
+
+@keyframes icon-ani {
+  from {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  to {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+}
+
+.itag {
+  padding: 5px 25px;
+}
+/*# sourceMappingURL=style.css.map */
